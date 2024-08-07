@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="video-section">
+    <div class="video-container">
+      <div class="video-item" onclick="openVideo('video1.mp4')">
+        <video src="video1.mp4" muted></video>
+      </div>
+      <div class="video-item" onclick="openVideo('video2.mp4')">
+        <video src="video2.mp4" muted></video>
+      </div>
+      <div class="video-item" onclick="openVideo('video3.mp4')">
+        <video src="video3.mp4" muted></video>
+      </div>
+      <div class="video-item" onclick="openVideo('video4.mp4')">
+        <video src="video4.mp4" muted></video>
+      </div>
+      <div class="video-item" onclick="openVideo('video5.mp4')">
+        <video src="video5.mp4" muted></video>
+      </div>
+
+      <div class="video-item" onclick="openVideo('video6.mp4')">
+        <video src="video6.mp4" muted></video>
+      </div>
+      <div class="video-item" onclick="openVideo('video7.mp4')">
+        <video src="video7.mp4" muted></video>
+      </div>
+      <div class="video-item" onclick="openVideo('video8.mp4')">
+        <video src="video8.mp4" muted></video>
+      </div>
+    </div>
+  </div>
+
+  <div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+      <span class="close" onclick="closeVideo()">&times;</span>
+      <video id="popupVideo" controls></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
